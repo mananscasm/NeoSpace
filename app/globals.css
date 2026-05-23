@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #c8f24a;
+  color: #052e1a;
+}
+
+.container-px {
+  @apply px-5 sm:px-8 lg:px-12;
+}
+
+.section-y {
+  @apply py-20 sm:py-24 lg:py-28;
+}
+
+.glass-panel {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.08));
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 24px 80px rgba(5, 46, 26, 0.18);
+  backdrop-filter: blur(22px);
+}
+
+.dark-glass {
+  background: linear-gradient(135deg, rgba(5, 46, 26, 0.72), rgba(12, 74, 47, 0.45));
+  border: 1px solid rgba(232, 255, 243, 0.16);
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(18px);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(5, 46, 26, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(5, 46, 26, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.button-focus {
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-limeglow;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
