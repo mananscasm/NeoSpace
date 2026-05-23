@@ -2,7 +2,7 @@
 
 NeoSpace Engineering is a polished, responsive website for a solar EPC and renewable energy solutions company. The site presents NeoSpace as a focused execution partner for commercial, industrial, institutional, and renewable infrastructure projects, with clear sections for services, strengths, projects, gallery, and enquiries.
 
-The experience is designed to feel professional and trustworthy: real solar project imagery, calm green energy branding, smooth page motion, strong calls to action, and an admin portal for updating website content without editing code.
+The experience is designed to feel professional and trustworthy: real solar project imagery, calm green energy branding, smooth page motion, strong calls to action, and a clear path for prospective customers to connect with the business.
 
 Live site: https://files-mentioned-by-the-user-neospac.vercel.app
 
@@ -14,7 +14,6 @@ Live site: https://files-mentioned-by-the-user-neospac.vercel.app
 - Service cards for EPC, rooftop solar, O&M, audits, net zero consulting, EMS, and more
 - Projects and client credibility section
 - Contact form with prefilled email enquiry flow
-- Admin portal for editing site content
 - Optimized local image assets served through Next.js
 
 ## Tech Stack
@@ -27,7 +26,9 @@ Live site: https://files-mentioned-by-the-user-neospac.vercel.app
 - Lucide Icons
 - Vercel deployment
 
-## Local Development
+## Development
+
+This repository contains the source code for the production website. Development access should be limited to authorized maintainers.
 
 Install dependencies:
 
@@ -47,20 +48,7 @@ Build for production:
 npm run build
 ```
 
-## Admin Access
-
-The admin portal is available at:
-
-```text
-/admin
-```
-
-For production, configure these Vercel environment variables:
-
-```text
-ADMIN_PASSWORD
-ADMIN_SESSION_TOKEN
-```
+Do not commit environment files, deployment metadata, passwords, tokens, or private business configuration.
 
 ## About
 
