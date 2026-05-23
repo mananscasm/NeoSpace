@@ -129,7 +129,7 @@ export const defaultContent: EditableContent = {
       "NeoSpace Engineering, a subsidiary of Enspace Energy Systems, delivers world-class, cost-effective solar EPC and renewable energy solutions for commercial, industrial, and institutional customers.",
     primaryCta: "Get Consultation",
     secondaryCta: "Our Services",
-    image: "/images/solar-hero.jpg"
+    image: "/images/solar-farm-real.jpg"
   },
   stats: [
     { value: "15+", label: "Years Experience" },
@@ -143,7 +143,7 @@ export const defaultContent: EditableContent = {
     title: "A focused Solar EPC partner with deep execution capability.",
     description:
       "NeoSpace Engineering is a subsidiary of Enspace Energy Systems. Incorporated in 2013, the company is among India's leading Solar EPC solution providers, focused on world-class, cost-effective renewable energy systems tailored to customer needs.",
-    image: "/images/solar-engineer-review.jpg",
+    image: "/images/solar-technician-panel.jpg",
     imageTitle: "Built for accountable solar delivery",
     imageText: "Design, engineering, procurement, commissioning, monitoring, and long-term support.",
     bullets: [
@@ -307,23 +307,28 @@ export const defaultContent: EditableContent = {
   },
   galleryImages: [
     {
-      src: "/images/solar-panels-industrial.jpg",
-      alt: "Solar panels across an industrial landscape",
+      src: "/images/industrial-rooftop-solar.jpg",
+      alt: "Industrial rooftop covered with solar panels",
       className: "md:col-span-2 md:row-span-2"
     },
     {
-      src: "/images/solar-farm-sunset.jpg",
-      alt: "Solar farm during sunset",
+      src: "/images/solar-technician-panel.jpg",
+      alt: "Technician installing hardware on a solar panel",
       className: ""
     },
     {
-      src: "/images/solar-engineer-review.jpg",
-      alt: "Engineer inspecting a solar installation",
+      src: "/images/rooftop-solar-system.jpg",
+      alt: "Rooftop solar system on a residential building",
       className: ""
     },
     {
-      src: "/images/renewable-infrastructure.jpg",
-      alt: "Renewable energy field installation",
+      src: "/images/solar-panels-closeup.jpg",
+      alt: "Aerial close-up of photovoltaic solar panel rows",
+      className: "md:col-span-2"
+    },
+    {
+      src: "/images/solar-farm-real.jpg",
+      alt: "Ground-mounted solar farm under a clear sky",
       className: "md:col-span-2"
     }
   ],
@@ -344,10 +349,15 @@ export const defaultContent: EditableContent = {
 };
 
 const legacyImageMap: Record<string, string> = {
-  "photo-1509391366360-2e959784a276": "/images/solar-hero.jpg",
-  "photo-1545209575-704158327940": "/images/solar-engineer-review.jpg",
-  "photo-1497440001374-f26997328c1b": "/images/solar-farm-sunset.jpg",
-  "photo-1559302504-64aae6ca6b6d": "/images/renewable-infrastructure.jpg"
+  "photo-1509391366360-2e959784a276": "/images/solar-farm-real.jpg",
+  "photo-1545209575-704158327940": "/images/solar-technician-panel.jpg",
+  "photo-1497440001374-f26997328c1b": "/images/solar-panels-closeup.jpg",
+  "photo-1559302504-64aae6ca6b6d": "/images/industrial-rooftop-solar.jpg",
+  "/images/renewable-infrastructure.jpg": "/images/industrial-rooftop-solar.jpg",
+  "/images/solar-engineer-review.jpg": "/images/solar-technician-panel.jpg",
+  "/images/solar-farm-sunset.jpg": "/images/solar-panels-closeup.jpg",
+  "/images/solar-hero.jpg": "/images/solar-farm-real.jpg",
+  "/images/solar-panels-industrial.jpg": "/images/industrial-rooftop-solar.jpg"
 };
 
 function normalizeImageSrc(src: string): string {
